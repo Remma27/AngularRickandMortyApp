@@ -1,0 +1,42 @@
+<mat-card class="example-card" *ngFor="let pers of results.results">
+  <mat-card-header class="header">
+    <mat-card-title-group>
+      <mat-card-title>{{ pers.id }}- {{ pers.name }}</mat-card-title>
+      <img mat-card-image [src]="pers.image" class="imagen" />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content class="content">
+    <div class="circle-container">
+      <div
+        class="circle"
+        [ngClass]="{
+          alive: pers.status === 'Alive',
+          dead: pers.status === 'Dead',
+          unknown: pers.status === 'unknown'
+        }"
+      ></div>
+      {{ pers.status }}
+    </div>
+    Especie: {{ pers.species }}
+    <br />
+    Genero: {{ pers.gender }}
+  </mat-card-content>
+</mat-card>
+<div class="pagination-buttons">
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="Anterior()"
+    [disabled]="!results.info.prev"
+  >
+    Anterior
+  </button>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="Siguiente()"
+    [disabled]="!results.info.next"
+  >
+    Siguiente
+  </button>
+</div>

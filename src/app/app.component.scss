@@ -1,0 +1,18 @@
+
+.mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; 
+    padding: 0 16px;
+    height: 64px; 
+  }
+  
+  .mat-button {
+    margin-left: 8px;
+  }
+
+  .router-outlet {
+    padding: 16px;
+  }
+  

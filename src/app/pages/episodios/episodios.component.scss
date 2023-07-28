@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 2opx;
+}

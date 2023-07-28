@@ -1,0 +1,56 @@
+.example-card {
+  width: 300px;
+  margin: 10px;
+  display: inline-block;
+  color: white;
+}
+
+.mat-card-title-group {
+  display: flex;
+  align-items: center;
+}
+
+.imagen {
+  width: 100px;
+  height: auto;
+}
+
+.mat-card-content {
+  padding: 10px;
+  border-top: 1px solid black;
+}
+
+.mat-card-content br {
+  display: none;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.circle.alive {
+  background-color: green;
+}
+
+.circle.dead {
+  background-color: red;
+}
+
+.circle.unknown {
+  background-color: gray;
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+}
